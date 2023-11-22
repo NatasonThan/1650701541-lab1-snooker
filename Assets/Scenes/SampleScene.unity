@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 68519775}
+  - component: {fileID: 68519776}
   m_Layer: 0
   m_Name: Referee
   m_TagString: Untagged
@@ -147,13 +148,36 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68519774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68519776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68519774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 857299f973338da4ebaafa75552b6621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: 0
+  ballPrefab: {fileID: 3876668137797689775, guid: 8662d09d70af2304489c656bba8b1aa0, type: 3}
+  ballPositions:
+  - {fileID: 144021430}
+  - {fileID: 1420499076}
+  - {fileID: 83284248}
+  - {fileID: 1660371595}
+  - {fileID: 2015521369}
+  - {fileID: 538545356}
+  - {fileID: 1686225202}
+  - {fileID: 1270277084}
 --- !u!1 &83284248
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +221,7 @@ GameObject:
   m_Layer: 0
   m_Name: White pos
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -346,7 +370,7 @@ Transform:
   m_GameObject: {fileID: 538545356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1148,14 +1172,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 538545357}
-  - {fileID: 2015521370}
-  - {fileID: 83284249}
   - {fileID: 144021431}
-  - {fileID: 1660371596}
-  - {fileID: 1270277085}
   - {fileID: 1420499077}
   - {fileID: 1686225203}
+  - {fileID: 538545357}
+  - {fileID: 2015521370}
+  - {fileID: 1660371596}
+  - {fileID: 83284249}
+  - {fileID: 1270277085}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015521369
@@ -1196,5 +1220,5 @@ SceneRoots:
   - {fileID: 963194228}
   - {fileID: 705507995}
   - {fileID: 911861974}
-  - {fileID: 68519775}
   - {fileID: 1999362162}
+  - {fileID: 68519775}
